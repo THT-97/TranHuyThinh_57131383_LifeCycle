@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("LifeCycle Method", "onRestart() called");
+        Toast.makeText(getApplicationContext(), "onRestart()", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onStop() {
         super.onStop();
         Log.d("LifeCycle Method", "onStop() called");

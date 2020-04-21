@@ -1,0 +1,15 @@
+﻿Câu 4:
+- Khi ứng dụng đang chạy và người sử dụng bấm nút back,các phương thức onPause(), onStop(), onDestroy() được gọi.
+- Khi mở lại ứng dụng, các phương thức onCreate(), onStart(), onResume() được gọi.
+
+Câu 5:
+- Khi ứng dụng đang chạy và người sử dụng bấm nút home, các phương thức onPause(), onStop() được gọi.
+- Khi mở lại ứng dụng, các phương thức onRestart(), onStart(), onResume() được gọi.
+
+Câu 6:
+Khi cần lưu thông tin để khôi phục trạng thái của ứng dụng thì cần thực hiện trong phương thức 
+onPause().
+Vì:
+- Nó được gọi khi hệ thống chuẩn bị chuyển sang activity khác.
+- Activity tiếp theo phải đợi nó hoàn thành để tiếp tục.
+- Nó thường được dùng để ghi các thay đổi chưa được lưu.
